@@ -45,7 +45,7 @@ body{
 .cta {
     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../HotelCodoACodo/Public/recepcionista1.jpg") fixed center center;
     background-size: cover;
-    padding: 60px 0;
+    padding: 40px 0;
   }
   
   .cta h3 {
@@ -73,18 +73,21 @@ body{
   }
   
   .cta .cta-btn:hover {
-    background: #2e5bd8;
+    background: #bbc9f3;
     border-color: #5731df;
     color: #151515;
   }
 
-
+/*--------------------------------------------------------------
+# HABITACIONES
+--------------------------------------------------------------*/
 .habitaciones{
     text-align: center;
     margin: 5px;
     padding-top: 15px;
-    background-color: #5731df
-;
+    background-color: #FFEED9;
+padding-bottom: 20px;
+gap: 10px;
 }
 
 .cards{
@@ -92,12 +95,79 @@ body{
     justify-content: center;
     gap: 20px;
     
+    
 }
 
 .habitacion{
     display:flex;
     flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
     padding: 10px;
 }
+.habitacion .botonR{
+    margin:10px;
+    margin-top: 20px;
+
+}
+/*--------------------------------------------------------------
+# Fin HABITACIONES
+--------------------------------------------------------------*/
 
 
+/*--------------------------------------------------------------
+Nuestros Servicios
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+Contacto
+--------------------------------------------------------------*/
+.contactocontainer{
+    background-image: url(Public/mendoza.jpg);
+    background-size: cover;
+   margin: 10px,0px,10px,0;
+
+}
+
+.FormularioReserva {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #090505;
+    border-radius: 10px;
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, 
+.form-group select, 
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.videoDestino{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+}

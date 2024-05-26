@@ -1,178 +1,320 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/HotelCodoACodo/Public/Logo.ico">
-    <!-- frameworks -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- swiffy-slider -->
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">   
 
-    <!-- Fuentes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-     <!-- Estilos  -->
-    <link rel="stylesheet" href="Index.css">
-    <title>Tp Codo a Codo</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/HotelCodoACodo/Public/Logo.ico">
+  <!-- Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- swiffy-slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+    defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Estilos  -->
+  <link rel="stylesheet" href="Index.css">
+  <title>Hotel Codo a Codo</title>
 </head>
 
 <body>
-   
+
   <header>
     <div class="logocontainer">
-    <img  class="logo" src="Public/Logo.ico" alt="logoHotel">
-      <h1>Hotel Codo a Codo </h1></div>
-        <nav>
-          <ul>
-            <li><a href="#habitaciones">Habitaciones</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#">Quines Somos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
+      <img class="logo" src="Public/Logo.ico" alt="logoHotel">
+      <h1>Hotel Codo a Codo </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#">Quines Somos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-<!-- CARRUSEL  -->
-      <section class="Carrusel">
+  <main>
+    <!-- CARRUSEL  -->
+    <section class="Carrusel">
 
-        <div class="swiffy-slider slider-item-reveal slider-nav-round slider-item-ratio slider-item-ratio-21x9" id="slider1">
-          <ul class="slider-container">
-              <li><img src="Public/habitacion1.jpg" loading="lazy" alt="..."></li>
-              <li><img src="Public/habitacion5.jpg" loading="lazy" alt="..."></li>
-              <li><img src="Public/habitacion3.jpg" loading="lazy" alt="..."></li>
-              <li><img src="Public/habitacion4.jpg" loading="lazy" alt="..."></li>
-          </ul>
-      
-          <button type="button" class="slider-nav" aria-label="Go left"></button>
-          <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-      
-          <div class="slider-indicators slider-indicators-square d-none d-md-flex">
-              <button class="active" aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-          </div>
-      
-          <div class="slider-indicators slider-indicators-sm slider-indicators-dark slider-indicators-round d-md-none slider-indicators-highlight">
-              <button class="active" aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-              <button aria-label="Go to slide"></button>
-          </div>
+      <div class="swiffy-slider slider-item-reveal slider-nav-round slider-item-ratio slider-item-ratio-21x9"
+        id="slider1">
+        <ul class="slider-container">
+          <li><img src="Public/habitacion1.jpg" loading="lazy" alt="..."></li>
+          <li><img src="Public/habitacion5.jpg" loading="lazy" alt="..."></li>
+          <li><img src="Public/habitacion3.jpg" loading="lazy" alt="..."></li>
+          <li><img src="Public/habitacion4.jpg" loading="lazy" alt="..."></li>
+        </ul>
+
+        <button type="button" class="slider-nav" aria-label="Go left"></button>
+        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+        <div class="slider-indicators slider-indicators-square d-none d-md-flex">
+          <button class="active" aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+        </div>
+
+        <div
+          class="slider-indicators slider-indicators-sm slider-indicators-dark slider-indicators-round d-md-none slider-indicators-highlight">
+          <button class="active" aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+        </div>
       </div>
 
-</section>
-      <!-- FINCARRUSEL -->
+    </section>
+    <!-- FINCARRUSEL -->
 
-<!-- CALL TO ACTION -->
-      <section class="reserva">
-        <section id="cta" class="cta">
-          <div class="container" data-aos="zoom-in">
-    
-            <div class="text-center">
-              <h3>Reserva Ahora</h3>
-              <p> loquito si la queres pasar bien alquilate una habitazao por aca !</p>
-              <a class="cta-btn" href="#">RESERVAR</a>
-            </div>
-    
+    <!-- CALL TO ACTION -->
+    <section class="reserva">
+      <section id="cta" class="cta">
+        <div class="container" data-aos="zoom-in">
+
+          <div class="text-center">
+            <h3>Reserva Ahora</h3>
+            <p> loquito si la queres pasar bien alquilate una habitazao por aca !</p>
+            <a class="cta-btn" href="#">RESERVAR</a>
           </div>
-        </section>
+
+        </div>
+      </section>
       <!-- End CALL TO ACTION -->
 
-      </section>
+    </section>
 
-      <section class="habitaciones"> 
-  <!-- Aca le podriamos poner un carrusel o Cards -->
-        <h2>Nuestras Habitaciones</h2>
-        <div class="cards">
+    <section class="habitaciones">
+      <!-- Aca le podriamos poner un carrusel o Cards -->
+      <h2>Nuestras Habitaciones</h2>
+      <div class="cards">
 
         <div class="habitacion">
           <h3>Habitación Simple</h3>
           <p>Precio: $100 por noche</p>
           <img src="Public/recepcionista1.jpg" width="200px" alt="Habitación Individual">
-          <button>Ver Más</button>
+          <button type="button" class="botonR btn btn-primary">Ver Más</button>
+        </div>
+
+        <div class="habitacion">
+          <h3>Habitación Simple</h3>
+          <p>Precio: $100 por noche</p>
+          <img src="Public/recepcionista1.jpg" width="200px" alt="Habitación Individual">
+          <button type="button" class="botonR btn btn-primary">Ver Más</button>
+        </div>
+        
+
+        <div class="habitacion">
+          <h3>Habitación Simple</h3>
+          <p>Precio: $100 por noche</p>
+          <img src="Public/recepcionista1.jpg" width="200px" alt="Habitación Individual">
+          <button type="button" class="botonR btn btn-primary">Ver Más</button>
         </div>
 
         <div class="habitacion">
           <h3>Habitación Doble</h3>
           <p>Precio: $150 por noche</p>
           <img src="Public/tragopileta.jpg" width="200px" alt="Habitación Doble">
-          <button>Ver Más</button>
+          <button type="button" class="botonR btn btn-primary">Ver Más</button>
         </div>
 
         <div class="habitacion">
           <h3>Habitación Doble</h3>
           <p>Precio: $150 por noche</p>
-          <img src="Public/tragopileta.jpg" width="200px" alt="Habitación Doble">
-          <button>Ver Más</button>
+          <img src="Public/patio1.jpg" width="200px" alt="Habitación Doble">
+          <button type="button" class="botonR btn btn-primary">Ver Más</button>
         </div>
       </div>
-      </section>
-    
-      <section  class="servicios">
-        <h2>Nuestros Servicios</h2>
-        <ul>
-          <li>Desayuno incluido</li>
-          <li>Piscina al aire libre</li>
-          <li>Wifi gratis en todas las áreas</li>
-        </ul>
-      </section>
+    </section>
 
+    <section class="servicios">
+      <h2>Nuestros Servicios</h2>
+      <ul>
+        <li>Desayuno incluido</li>
+        <li>Piscina al aire libre</li>
+        <li>Wifi gratis en todas las áreas</li><i class="fa-duotone fa-wifi"></i>
+      </ul>
 
-      <div class="videoDestino"> </div>
-
-      <section class="Faqs">
-        <h2>Pregguntas Frecuentes</h2>
-        <p>Para reservas, contáctenos al:</p>
-        <p>Teléfono: 123-456-789</p>
-        <p>Correo electrónico: info@hotelabc.com</p>
-      </section>
-
-      <section class="contacto">
-        <!-- Puede ser un boton que te mande al html con el formulario  -->
-        <h2>Contacto</h2>
-        <p>Para reservas, contáctenos al:</p>
-        <p>Teléfono: 123-456-789</p>
-        <p>Correo electrónico: info@hotelabc.com</p>
-        <!-- Aca va el MAPS DE GOOGLE  -->
-        <iframe src=""></iframe>
-      </section>
-
-
-    </main>
-
-      <footer>
-
-        <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
-        
-            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-              <img src="./Public/Logo.ico" alt="logoHotel">
-              <svg src="./Public/Logo.ico" class="bi me-2" width="40" height="32"><use xlink:href="./Public/logo.ico"/></svg>
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Servicios Incluidos</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#collection" />
+              </svg>
+              <i class="fa-duotone fa-wifi"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi">
+                <use xlink:href="#chevron-right" />
+              </svg>
             </a>
-        
-            <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Habitaciones</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Servicios</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-          </footer>
+
+          </div>
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#people-circle" />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#toggles2" />
+              </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+              probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi">
+                <use xlink:href="#chevron-right" />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- <p>&copy; 2024 Hotel ABC. Todos los derechos reservados.</p> -->
-        <!-- Agregar Iconos de las redes  sociales -->
+
+    <div class="videoDestino">
+      <h1> Veni a Mendoza a Visitarnos</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RWSSUl80cYw?si=C_cR-mcNLXjrtk80"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <section class="Faqs">
+      <h2>Pregguntas Frecuentes</h2>
+      <p>Para reservas, contáctenos al:</p>
+      <p>Teléfono: 123-456-789</p>
+      <p>Correo electrónico: info@hotelabc.com</p>
+    </section>
+
+    <section class="contacto">
+      
+<div class="contactocontainer">
+      <div class="FormularioReserva">
+        <h2>Formulario de Reserva del Hotel</h2>
+        <form action="/reservar" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad de Personas:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo_habitacion">Tipo de Habitación:</label>
+                <select id="tipo_habitacion" name="tipo_habitacion" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="individual">Individual</option>
+                    <option value="doble">Doble</option>
+                    <option value="suite">Suite</option>
+                    <option value="familiar">Familiar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Reservar</button>
+            </div>
+        </form></div>
+    </div>
+    
+    <!-- Puede ser un boton que te mande al html con el formulario  -->
+      <h2>Contacto</h2>
+      <p>Para reservas, contáctenos al:</p>
+      <p>Teléfono: 123-456-789</p>
+      <p>Correo electrónico: info@hotelCodoacodo.com</p>
+
+
+      <!-- Aca va el MAPS DE GOOGLE  -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107217.98176547179!2d-68.94092033130947!3d-32.883308183863384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1716745401897!5m2!1ses!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="./Public/Logo.ico" alt="logoHotel">
+          <svg src="./Public/Logo.ico" class="bi me-2" width="40" height="32">
+            <use xlink:href="./Public/logo.ico" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Habitaciones</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Servicios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        </ul>
       </footer>
-    <!-- Scripts -->
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- <p>&copy; 2024 Hotel ABC. Todos los derechos reservados.</p> -->
+    <!-- Agregar Iconos de las redes  sociales -->
+  </footer>
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/96eeb1b188.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
