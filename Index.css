@@ -1,64 +1,76 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto Condensed", sans-serif;
 }
 
-header{
+header {
     background-color: #00a9FF;
 }
 
-.logocontainer{
+h1,h2,h3 {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+}
+
+.logocontainer {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    color: white;
 }
 
-.logocontainer img{
+.logocontainer img {
     width: 43px;
     height: 43px;
-    margin: 0px , 10px ,10px, 10px;
+    margin: 0px, 10px, 10px, 10px;
     padding-right: 5px;
 
 }
-
-nav a{
+/*--------------------------------------------------------------
+NAV
+--------------------------------------------------------------*/
+nav a {
     text-decoration: none;
     color: aliceblue;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
-nav li{
-   display:inline ;
+
+nav li {
+    display: inline;
+    color: white;
 }
 
-body{
-    background-color: #e0f4ff;
-}
+
 
 /*--------------------------------------------------------------
-# Cta
+# RESERVA
 --------------------------------------------------------------*/
 .cta {
-    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../HotelCodoACodo/Public/recepcionista1.jpg") fixed center center;
+    background: linear-gradient(rgba(55, 121, 221, 0.5),rgba(203, 211, 220, 0.5)), url("../HotelCodoACodo/Public/recepcionista1.jpg") fixed center center;
     background-size: cover;
     padding: 40px 0;
-  }
-  
-  .cta h3 {
+}
+
+.cta h3 {
     color: #fff;
     font-size: 28px;
     font-weight: 700;
-  }
-  
-  .cta p {
+}
+
+.cta p {
     color: #fff;
-  }
-  
-  .cta .cta-btn {
+}
+
+.cta .cta-btn {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -70,91 +82,179 @@ body{
     margin-top: 10px;
     border: 2px solid #fff;
     color: #fff;
-  }
-  
-  .cta .cta-btn:hover {
-    background: #bbc9f3;
-    border-color: #5731df;
-    color: #151515;
-  }
+}
+
+.cta .cta-btn:hover {
+    background: #1c7ab5;
+    border-color: #1038eb;
+    color: #fcf9f9;
+}
 
 /*--------------------------------------------------------------
 # HABITACIONES
 --------------------------------------------------------------*/
-.habitaciones{
+.habitaciones {
     text-align: center;
     margin: 5px;
     padding-top: 15px;
-    background-color: #FFEED9;
-padding-bottom: 20px;
-gap: 10px;
+    background: linear-gradient(to bottom #FFEED9, #FFFFFF);
+    gap: 10px;
 }
 
-.cards{
+.cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    
-    
 }
 
-.habitacion{
-    display:flex;
+.cards img {
+    width: 100%;
+    gap: 10px;
+}
+
+.habitacion {
+    display: flex;
     flex-direction: column;
     background-color: white;
     opacity: 0.9;
     border-radius: 10px;
     padding: 10px;
+    gap: 10px;
+    margin: 5px;
 }
-.habitacion .botonR{
-    margin:10px;
+
+.habitacion .botonR {
+    margin: 10px;
     margin-top: 20px;
 
 }
+
 /*--------------------------------------------------------------
 # Fin HABITACIONES
 --------------------------------------------------------------*/
-
+#quienes-somos{
+    width: 100%;
+    text-align: center;
+    background-color: #e7eef0;
+    border-radius: 15px;
+}
 
 /*--------------------------------------------------------------
 Nuestros Servicios
 --------------------------------------------------------------*/
+.servicios {
+    margin-bottom: 30px;
+    opacity: 0.9;
 
-
+}
+/*--------------------------------------------------------------
+ABOUT US BOTON
+--------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(3, 3, 3);
+    border: 3px solid rgb(70, 158, 252);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+   }
+   
+   .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 152, 245);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    transform: translateX(0);
+   }
 
 /*--------------------------------------------------------------
-Contacto
+SECTION VIDEO
 --------------------------------------------------------------*/
-.contactocontainer{
+.video{
+    padding:20px;
+    margin-bottom: 50px;
+}
+
+.videoDestino {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+/*--------------------------------------------------------------
+Contacto FORMULARIO
+--------------------------------------------------------------*/
+.contacto{
+    background-color: antiquewhite;
+    
+}
+
+.contactoDatos{
+    size: 10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #FFFFFF, #FFEED9);
+   
+}
+
+.contactoDatos .socialMedia1{
+    display: inline-flex;
+}
+
+
+.contactocontainer {
     background-image: url(Public/mendoza.jpg);
     background-size: cover;
-   margin: 10px,0px,10px,0;
+    margin: 10px, 0px, 10px, 0;
+;
+}
 
+.contactocontainer iframe {
+    align-items: center;
+    margin-top: 30px;
 }
 
 .FormularioReserva {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     border: 1px solid #090505;
     border-radius: 10px;
     background-color: aliceblue;
     opacity: 0.9;
+   
 }
+
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
-.form-group input, 
-.form-group select, 
+
+.form-group input,
+.form-group select,
 .form-group button {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
+
 .form-group button {
     background-color: #007BFF;
     color: #fff;
@@ -162,12 +262,95 @@ Contacto
     border-radius: 5px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #0056b3;
 }
 
-.videoDestino{
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
+
+
+
+/*--------------------------------------------------------------
+Footer 
+--------------------------------------------------------------*/
+
+.socialMedia1 {
+    display: flex;
+    height: 70px;
+    width: 270px;
+}
+
+.socialMedia1 svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.socialMedia1 .social-link1,
+.socialMedia1 .social-link2,
+.socialMedia1 .social-link3,
+.socialMedia1 .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: rgb(12, 8, 8);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.socialMedia1 svg {
+    transform: scale(1);
+}
+
+.socialMedia1 .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.socialMedia1 .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+}
+
+.socialMedia1 .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.socialMedia1 .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
