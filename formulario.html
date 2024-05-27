@@ -86,6 +86,18 @@
                   <label for="cantidad">Cantidad de Personas:</label>
                   <input type="number" id="cantidad" name="cantidad" min="1" required>
               </div>
+              Forma De Pago <br>
+              <input type="checkbox" id="tarjeta_credito" name="forma_pago" value="Tarjeta de Crédito">
+              <label for="tarjeta_credito">Tarjeta de Crédito</label>
+      
+              <input type="checkbox" id="paypal" name="forma_pago" value="PayPal">
+              <label for="paypal">PayPal</label>
+              <br>
+              <input type="checkbox" id="transferencia_bancaria" name="forma_pago" value="Transferencia Bancaria">
+              <label for="transferencia_bancaria">Transferencia Bancaria</label>
+      
+              <input type="checkbox" id="efectivo" name="forma_pago" value="Efectivo">
+              <label for="efectivo">Efectivo</label><br><br>
               <div class="form-group">
                   <label for="tipo_habitacion">Tipo de Habitación:</label>
                   <select id="tipo_habitacion" name="tipo_habitacion" required>
@@ -135,6 +147,8 @@
         <!-- <p>&copy; 2024 Hotel ABC. Todos los derechos reservados.</p> -->
         <!-- Agregar Iconos de las redes  sociales -->
       </footer>
+
+      <script src="validacion.js"></script>
 </body>
 
 </html>
