@@ -29,19 +29,17 @@
 <body>
 
   <header>
-
     <div class="logocontainer">
-      <nav class="navbar navbar-expand-md navbar-light">
+      <nav class="navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="Public/Logo.ico" alt="logoHotel" class="logo">
             Hotel Codo a Codo
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#habitaciones">Habitaciones</a>
@@ -63,7 +61,7 @@
         </div>
       </nav>
     </div>
-  </header>
+    
 
   <main>
     <!-- CARRUSEL  -->
@@ -119,97 +117,84 @@
     <!-- Habitaciones Cards -->
     <section id="habitaciones" class="habitaciones">
       <h2>Nuestras Habitaciones</h2>
-      <div class="row">
-
-
-        <div class="col-md-4 col-sm-6">
-          <div class="card habitacion">
-            <h3 class="card-title">Habitación Simple</h3>
-            <p class="card-text">Precio: $50 por noche</p>
-            <img src="Public/recepcionista1.jpg" class="card-img-top img-fluid" alt="Habitación Individual">
-            <button type="button" class="btn btn-primary">Reservar</button>
-          </div>
+      <div class="cards-container">
+        <div class="card-habitacion">
+          <h3 class="card-title">Habitación Simple</h3>
+          <p class="card-text">Precio: $50 por noche</p>
+          <img src="Public/recepcionista1.jpg" alt="Habitación Individual">
+          <button type="button" class="btn btn-primary">Reservar</button>
         </div>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="card habitacion">
-            <h3 class="card-title">Habitación Doble</h3>
-            <p class="card-text">Precio: USD$100 por noche</p>
-            <img src="Public/tragopileta.jpg" class="card-img-top img-fluid" alt="Habitación Doble">
-            <button type="button" class="btn btn-primary">Reservar</button>
-          </div>
+        <div class="card-habitacion">
+          <h3 class="card-title">Habitación Doble</h3>
+          <p class="card-text">Precio: USD$100 por noche</p>
+          <img src="Public/tragopileta.jpg" alt="Habitación Doble">
+          <button type="button" class="btn btn-primary">Reservar</button>
         </div>
 
-        <div class="col-md-4 col-sm-6">
-          <div class="card habitacion">
-            <h3 class="card-title">Habitación En Suite</h3>
-            <p class="card-text">Precio: USD$150 por noche</p>
-            <img src="Public/patio1.jpg" class="card-img-top img-fluid" alt="Habitación Doble">
-            <button type="button" class="btn btn-primary">Reservar</button>
-          </div>
+        <div class="card-habitacion">
+          <h3 class="card-title">Habitación En Suite</h3>
+          <p class="card-text">Precio: USD$150 por noche</p>
+          <img src="Public/patio1.jpg" alt="Habitación En Suite">
+          <button type="button" class="btn btn-primary">Reservar</button>
         </div>
       </div>
     </section>
 
     <!-- Servicios -->
     <section id="servicios" class="servicios">
-
-      <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom">Servicios Incluidos</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <div class="container">
+        <h2 class="section-title">Servicios Incluidos</h2>
+        <div class="services-grid">
+          <div class="feature">
+            <div class="feature-icon">
               <i class="fas fa-wifi"></i>
             </div>
-            <h3 class="fs-2 text-body-emphasis">Wifi 5G</h3>
+            <h3 class="feature-title">Wifi 5G</h3>
             <p>Contamos con la mejor Calidad y cobertura 5g de internet con una descarga de 300MB para que puedas
-              disfrutar sin ningun problema.
-            </p>
+              disfrutar sin ningun problema.</p>
             <a href="#" class="icon-link">
               Ver más
-              <svg class="bi">
-                <use xlink:href="#chevron-right" />
-              </svg>
             </a>
-
           </div>
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <div class="feature">
+            <div class="feature-icon">
               <i class="fas fa-dumbbell"></i>
             </div>
-            <h3 class="fs-2 text-body-emphasis">Gimnasio</h3>
-            <p>Contamos con las maquinas de mas calidad del mercado junto a profesores de todo cuyo
-              para que entrenes con lo mejor
-            </p>
+            <h3 class="feature-title">Gimnasio</h3>
+            <p>Contamos con las maquinas de mas calidad del mercado junto a profesores de todo cuyo para que entrenes
+              con lo mejor.</p>
             <a href="#" class="icon-link">
               Ver más
-              <svg class="bi">
-                <use xlink:href="#chevron-right" />
-              </svg>
+            </a>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-swimmer"></i>
+            </div>
+            <h3 class="feature-title">Pileta Olimpica</h3>
+            <p>Tenemos dos piscinas de excelente calidad,una de competencia y otra para que disfrutes junto a tu
+              familia.</p>
+            <a href="#" class="icon-link">
+              Ver más
             </a>
           </div>
 
-          <div class="feature col">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <div class="feature">
+            <div class="feature-icon">
               <i class="fas fa-swimmer"></i>
             </div>
-            <h3 class="fs-2 text-body-emphasis">Pileta Olimpica</h3>
-            <p>Tenemos dos piscinas de excelente calidad,una de competencia y otra para que disfrutes junto
-              a tu familia
-            </p>
+            <h3 class="feature-title">Servicio New</h3>
+            <p>Tenemos dos piscinas de excelente calidad,una de competencia y otra para que disfrutes junto a tu
+              familia.</p>
             <a href="#" class="icon-link">
               Ver más
-              <svg class="bi">
-                <use xlink:href="#chevron-right" />
-              </svg>
             </a>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- About Us-->
     <section id="quienes-somos">
@@ -220,9 +205,9 @@
         dedicación absoluta a la satisfacción de nuestros huéspedes. Ya sea que nos visite por negocios o placer,
         nuestro equipo se asegura de que su estancia sea memorable y placentera.
       </p>
-
       <a class="btn" href="/formulario.html">Enviar Formulario</a>
     </section>
+    
 
     <!-- Video -->
     <section class="video">
@@ -315,7 +300,7 @@
     </footer>
   </div>
 
- 
+
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/96eeb1b188.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
