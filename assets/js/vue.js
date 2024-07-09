@@ -481,6 +481,32 @@ const MiReservaComponent = {
       <h3>No se encontraron reservas</h3>
     </div>
     <div v-if="reservaResumen">
+      <div class="position-fixed start-50 translate-middle-x" style="top: 25vh; z-index: 1050; transform: translate(-50%, -50%);">
+
+        <div class="toast" id="successToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+          <div class="toast-header bg-success text-white">
+            <strong class="mr-auto">Éxito</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Reserva cancelada con éxito.
+          </div>
+        </div>
+
+        <div class="toast" id="errorToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+          <div class="toast-header bg-danger text-white">
+            <strong class="mr-auto">Error</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Ha ocurrido un error. Inténtalo de nuevo más tarde.
+          </div>
+        </div>
+  </div>
       <div class="mt-4">
         <h3>Tus reservas</h3>
       </div>
@@ -561,8 +587,10 @@ const MiReservaComponent = {
       axios.get(url_api + '/cancelarReserva/' + this.codigoReserva)
         .then(response => {
           this.reservaResumen = response.data[0];
+          $('#successToast').toast('show');
         })
         .catch(error => {
+          $('#errorToast').toast('show');
           console.error('Error al obtener las habitaciones:', error);
         });
 
