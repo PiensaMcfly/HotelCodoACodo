@@ -16,14 +16,7 @@ body {
     background-color: white;
 }
 
-.logocontainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    color: white;
-}
-
-.logocontainer img {
+.logo {
     width: 43px;
     height: 43px;
     margin: 0px, 10px, 10px, 10px;
@@ -46,7 +39,6 @@ NAV
   }
   
   .container {
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
   }
