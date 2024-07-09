@@ -1,7 +1,7 @@
 # Hotel Codo A Codo
 
 ¡Bienvenido al repositorio de Frontend de Hotel Codo A Codo! (Proyecto Full Stack con NodeJS). Este proyecto es una aplicación web diseñada para gestionar reservas y habitaciones de un hotel. La aplicación está construida utilizando Vue.js y Bootstrap, y consume una API para interactuar con la base de datos del hotel.
-
+link al repositorio del Backend: https://github.com/PiensaMcfly/Backend_HotelCaC.git
 Funcionalidades
 
     Buscar Reserva: Funcionalidad para buscar reservas.
