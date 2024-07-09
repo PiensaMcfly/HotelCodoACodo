@@ -6,6 +6,6 @@ Funcionalidades
 
     Buscar Reserva: Funcionalidad para buscar reservas.
     Gestión de Habitaciones: Visualización y administración de habitaciones disponibles.
-    Autenticación: Login y verificación de usuarios utilizando JWT.
+    Autenticación: Login y verificación de usuarios utilizando JWT (administradores).
     Subida de Archivos: Permite subir imágenes para las habitaciones.
 
