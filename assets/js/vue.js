@@ -1,4 +1,4 @@
-const url_api = 'http://localhost:8080';
+const url_api = 'https://backend-hotelcac.onrender.com';
 
 const HeaderComponent = {
   template: `
