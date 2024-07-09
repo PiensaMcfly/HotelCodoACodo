@@ -1,4 +1,4 @@
-const url_api = 'https://backendhotelcac-production.up.railway.app:8080';
+const url_api = 'https://backendhotelcac-production.up.railway.app';
 
 const HeaderComponent = {
   template: `
