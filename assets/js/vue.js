@@ -1,5 +1,4 @@
-const url_api = 'https://backendhotelcac-production.up.railway.app';
-
+const url_api = 'https://backend-hotelcac.onrender.com';
 const HeaderComponent = {
   template: `
 <header>
